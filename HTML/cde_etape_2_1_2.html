@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img src="/IMG/logo.png" alt="image du logo du site internet">
+        <!-- connexion inscription -->
+       <div><a href="connexion.html">connexion</a> / <a href="">inscription</a> </div>
+       
+        <!-- panier -->
+       <div><!-- menu -->
+            <nav> 
+            <span>
+                <img src="/IMG/menu.png" alt="menu">
+            </span>
+            <ul>
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="technique_tattoo.html">les techniques de tatouages</a></li>
+                <li><a href="listing_produits.html">boutique - tattoos temparaires</a></li>
+                <li><a href="histoire.html">histoire - l'origine du tatouages</a></li>
+                <li>compte</li>
+                <li>Nous contacter<a href="">inkstory@gmail.com</a></li>
+            </ul>
+        </nav>
+        <span>
+            <img src="/IMG/panier.png" alt="panier">
+        </span> 
+       </div> 
+        <!-- image proincipal -->
+        <img src="/IMG/image_principale.jpg" alt="image principale">
+    </header>
+    <main>
+        <section>
+           <article>
+            <h1>Inscription</h1>
+            <form action="cde_paiement.html" method="post">
+              <label for="nom"><input placeholder="nom" type="text" name="nom" id="nom"></label>
+              <label for="prenom"><input placeholder="prenom" type="text" name="prenom" id="prenom"></label>
+              <br>
+              <label for="email"><input placeholder="email" type="email" name="email" id="email"></label>
+              <br>
+              <label for="adresse"><input placeholder="adresse" type="text" name="adresse" id="adresse"></label>
+              
+              <br>
+              <label for="cp"><input placeholder="code postal" min="5" max="5" type="number" name="cp" id="cp"></label>
+              <label for="ville"><input placeholder="ville" type="text" name="ville" id="ville"></label>
+              
+              <label for="password1"><input placeholder="mot de passe" type="password" name="password1" id="password1"></label>
+              <br>
+              <label for="password2"><input placeholder="confirmer votre mot de passe" type="password" name="password2" id="password2"></label>
+            <br>
+            <p>Au moins une minuscule</p>
+            <p>Au moins une majuscule</p>
+            <p>Au moins un caractère spécial (@#%$)</p>
+            <p>Au moins 8 caractères</p>
+            <br>
+            <label for="cgv"><input required type="checkbox" name="cgv" id="cgv">J’accepte  les conditions générales d’utilisation</label>
+<br>
+<label for="news"><input type="checkbox" name="news" id="news">Je souhaite m’abonné a la Newsletter</label>
+
+              <input type="submit" value="S'inscrire">
+            
+            </form>
+           </article> 
+        </section>
+    </main>
+    <footer>
+        <div>
+          <span
+            ><a href="">
+              <img src="/IMG/instagram.png" alt="lien vers instagram" /></a
+          ></span>
+          <span
+            ><a href=""><img src="/IMG/facebook.png" alt="lien vers facebook" /></a
+          ></span>
+          <span
+            ><a href=""
+              ><img src="/IMG/messenger.png" alt="lien vers messenger" />
+            </a>
+          </span>
+        </div>
+        <div>
+          <span> <a href="">copyright © 2023 - Tous droits reservés</a></span>
+          <span> <a href="">mentiens légales</a></span>
+          <span> <a href="">Conditions générales</a> </span>
+        </div>
+      </footer>
+</body>
+</html>
