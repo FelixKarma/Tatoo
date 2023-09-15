@@ -1,7 +1,23 @@
 #div_img{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
 }
-
+#div_img a{
+    margin:10px;
+    width:50px;
+}
+#insta{
+    width:43px;
+    height:41px;
+}
+#div_cgv{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#div_cgv a:active{
+    color:black;
+    
+}
