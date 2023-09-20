@@ -51,11 +51,10 @@ header{
     position:relative;
     top: -50px;
     right:20px;
-    align-content: flex-end;
     z-index: 8;
 
 }
-#panier{
+#panier_menu img{
     width: 30px;
     height:28px;
 }
@@ -69,7 +68,7 @@ header{
 }
 #div_img_principale{
     position:relative;
-    top:-40px;
+    top:-30px;
     width:778px;
     height:118px;
     border: 1px solid black;
@@ -88,4 +87,16 @@ header{
     height:500px;
     display:flex;
     flex-direction: column;
+    background-color: black;
+    position:relative;
+    z-index: 12;
+    top:-140px;
+    right: -740px;
+}
+#menu a {
+    width: 300px;
+    height:5Opx;
+    background-color: #D9D9D9;
+    display:flex;
+    justify-content: center;
 }
