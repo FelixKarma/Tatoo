@@ -1,3 +1,9 @@
+footer{
+    background-color: #D9D9D9;
+    position:absolute;
+    bottom:0;
+    width:1024px;
+}
 #div_img{
     display:flex;
     flex-direction: row;
@@ -17,7 +23,7 @@
     flex-direction: row;
     justify-content: center;
 }
-#div_cgv a:active{
+#div_cgv a{
     color:black;
-    
+    text-decoration: none;
 }

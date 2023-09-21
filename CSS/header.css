@@ -22,10 +22,13 @@ header{
     flex-direction: row;
     justify-content: center; 
     align-content: center;
+    align-items: center;
 }
-#login a:link{
+#login a{
     color:white;
     font-family: inherit;
+    font-size: 15px;
+    text-decoration: none;
 }
 #logo{
     display:flex;
@@ -84,19 +87,25 @@ header{
 
 #menu{
     width:300px;
-    height:500px;
     display:flex;
     flex-direction: column;
     background-color: black;
     position:relative;
     z-index: 12;
-    top:-140px;
-    right: -740px;
+    top:-146px;
+    right: -724.5px;
 }
-#menu a {
+.lien_menu {
     width: 300px;
-    height:5Opx;
+    height:50px;
     background-color: #D9D9D9;
     display:flex;
     justify-content: center;
+   
+}
+.lien_menu a,  .lien_menu span{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
 }
