@@ -5,9 +5,7 @@ section{
     position:absolute;
     top:200px;
     left:25%;
-
     width:700px;
-    border:1px solid black ;
 } 
 #img_left{ 
     background-image: url("/IMG/pages/accueil/DROITE-1.png");
