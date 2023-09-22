@@ -86,7 +86,8 @@ header{
 
 #menu{
     width:300px;
-    display:flex;
+    height :0px;
+    display:none;
     flex-direction: column;
     background-color: black;
     position:relative;
