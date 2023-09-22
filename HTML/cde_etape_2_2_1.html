@@ -14,7 +14,7 @@
     <div id="header">
         <div id="div_login">
           <div id="login">
-            <a  href="connexion.html">connexion</a> / <a href="">inscription</a> 
+            <a  href="connexion.html">connexion</a> / <a href="inscription.html">inscription</a> 
           </div>
         </div>
         <div id="logo">
@@ -25,8 +25,8 @@
         
           <!-- panier -->
          <div id="panier_menu"><!-- menu -->
-              <img id="menu" src="/IMG/menu.png" alt="menu">
-              <img id="panier" src="/IMG/panier.png" alt="panier">
+              <img id="btn_menu" src="/IMG/menu.png" alt="menu">
+              <img  src="/IMG/panier.png" alt="panier">
          </div> 
           <!-- image proincipal -->
           <div id="pos">
@@ -35,15 +35,14 @@
             </div> 
           </div>
           
-        <nav> 
-          <ul>
-              <li><a href="index.html">accueil</a></li>
-              <li><a href="technique_tattoo.html">les techniques de tatouages</a></li>
-              <li><a href="listing_produits.html">boutique - tattoos temparaires</a></li>
-              <li><a href="histoire.html">histoire - l'origine du tatouages</a></li>
-              <li>compte</li>
-              <li>Nous contacter<a href="">inkstory@gmail.com</a></li>
-          </ul>
+        <nav id="menu"> 
+          <div class="lien_menu"><a href="index.html">accueil</a></div>
+          <div class="lien_menu"> <a href="technique_tattoo.html">les techniques de tatouages</a></div>
+          <div class="lien_menu"> <a href="listing_produits.html">boutique - tattoos temparaires</a></div>
+          <div class="lien_menu"> <a href="histoire.html">histoire - l'origine du tatouages</a></div>
+          <div class="lien_menu">compte</div>
+          <div class="lien_menu"><span>Nous contacter   &nbsp; </span><a href="">   inkstory@gmail.com</a></div>
+          
         </nav>
       </div>
          </header>
@@ -68,25 +67,16 @@
         </section>
     </main>
     <footer>
-        <div>
-          <span
-            ><a href="">
-              <img src="/IMG/ri_instagram-line.png" alt="lien vers instagram" /></a
-          ></span>
-          <span
-            ><a href=""><img src="/IMG/facebook.png" alt="lien vers facebook" /></a
-          ></span>
-          <span
-            ><a href=""
-              ><img src="/IMG/messenger.png" alt="lien vers messenger" />
-            </a>
-          </span>
-        </div>
-        <div>
-          <span> <a href="">copyright © 2023 - Tous droits reservés</a></span>
-          <span> <a href="">mentiens légales</a></span>
-          <span> <a href="">Conditions générales</a> </span>
-        </div>
-      </footer>
+      <div id="div_img">
+        <a id="insta" href=""></a> <img src="/IMG/ri_instagram-line.png" alt="lien vers instagram" /></a>
+        <a href=""><img src="/IMG/facebook.png" alt="lien vers facebook" /></a>
+       <a href=""><img src="/IMG/messenger.png" alt="lien vers messenger" /></a>     
+    </div>
+      <div id="div_cgv">
+        <a href="">copyright © 2023 - Tous droits reservés</a>
+        <a href="">mentiens légales</a>
+        <a href="">Conditions générales</a>
+      </div>
+    </footer>
 </body>
 </html>

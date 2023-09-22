@@ -1,0 +1,36 @@
+main{
+    width:1024px;
+}
+section{
+    position:absolute;
+    top:200px;
+    left:25%;
+    width:700px;
+} 
+#img_left{ 
+    background-image: url("/IMG/pages/accueil/DROITE-1.png");
+    width:700px;
+}
+
+ /* #img_right{
+    background-image: url("/IMG/pages/accueil/GAUCHE-1.png");
+position:absolute;
+right:25%;
+ } */
+
+ #display_prod{
+    display:flex;
+    flex-direction: row;
+    width:600px;
+    justify-content: space-between;
+    margin:35px;
+ }
+.prod{
+    width: 162px;
+    height: 176px;
+    border-radius: 20px;
+}
+h1, p{
+    text-align: center;
+    font-family: inherit;
+}

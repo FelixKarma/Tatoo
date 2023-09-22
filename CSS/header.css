@@ -22,10 +22,13 @@ header{
     flex-direction: row;
     justify-content: center; 
     align-content: center;
+    align-items: center;
 }
-#login a:link{
+#login a{
     color:white;
     font-family: inherit;
+    font-size: 15px;
+    text-decoration: none;
 }
 #logo{
     display:flex;
@@ -51,11 +54,10 @@ header{
     position:relative;
     top: -50px;
     right:20px;
-    align-content: flex-end;
     z-index: 8;
 
 }
-#panier{
+#panier_menu img{
     width: 30px;
     height:28px;
 }
@@ -69,10 +71,9 @@ header{
 }
 #div_img_principale{
     position:relative;
-    top:-40px;
+    top:-30px;
     width:778px;
     height:118px;
-    border: 1px solid black;
     overflow: hidden;
 }
 
@@ -85,7 +86,25 @@ header{
 
 #menu{
     width:300px;
-    height:500px;
     display:flex;
     flex-direction: column;
+    background-color: black;
+    position:relative;
+    z-index: 12;
+    top:-146px;
+    right: -724.5px;
+}
+.lien_menu {
+    width: 300px;
+    height:50px;
+    background-color: #D9D9D9;
+    display:flex;
+    justify-content: center;
+   
+}
+.lien_menu a,  .lien_menu span{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
 }

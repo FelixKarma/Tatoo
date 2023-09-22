@@ -1,0 +1,32 @@
+section{
+    background-color: #D9D9D9; 
+}
+article{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:700px; 
+    align-items: flex-start;
+}
+h1{
+    text-align: center;
+
+}
+h2{
+    width:400px;
+    height:48px;
+    border:1px solid black;
+}
+#img_tech_tattoo{
+    width:178px;
+    height:178px;
+    margin:50px;
+}
+
+article p {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:700px; 
+    align-items: flex-end;
+}
