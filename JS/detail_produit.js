@@ -64,12 +64,28 @@ function showProd() {
             break;
         }
       } 
+      
     }
-  } else {
-    return false; 
-  }
+    return false ;
+  } 
 }
 if(!showProd()){
     document.location.assign("404.html");
 }
+
+let qte = document.getElementById("qte");
+let up = document.getElementById("up");
+
+up.addEventListener('click',function(){
+    let q  =parseInt(qte.innerText);
+     qte.innerText = q + 1;   
+});
+
+let down = document.getElementById("down");
+down.addEventListener('click',function(){
+   if(qte.innerText > 0){
+     qte.innerText = qte.innerText - 1;
+   }
+});
+
 
