@@ -1,6 +1,7 @@
 header{
     width:1024px;
-    height:172px;  
+    height:172px;
+    position:absolute;  
 }
 #header{
     width:1024px;

@@ -1,0 +1,44 @@
+
+#h1_prod{
+   display:flex;
+   justify-content: center;
+   width: 1024px;
+   position:absolute;
+   margin: -120px;
+   border:1px solid black;
+}
+/* article{
+   width:1024px;
+   border:1px solid black;
+} */
+ #display_prod{
+   display:flex;
+   flex-flow: row;
+   
+   width:1024px;
+  margin-top: 299px;
+
+  border:1px solid black;
+} 
+#image{
+   width: 200px;
+   height:200px;
+}
+#get_buy{
+   width:700px;
+   height:40px;
+   display:flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   border:1px solid black ;
+}
+
+#div_desc{
+   border:1px solid black;
+   display:flex;
+   width:600px;
+   justify-content: flex-start;
+   position:absolute;
+   top:350px;
+   left:250px;
+}
