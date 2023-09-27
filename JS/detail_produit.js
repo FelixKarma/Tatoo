@@ -75,17 +75,75 @@ if(!showProd()){
 
 let qte = document.getElementById("qte");
 let up = document.getElementById("up");
-
+let down = document.getElementById("down");
 up.addEventListener('click',function(){
     let q  =parseInt(qte.innerText);
      qte.innerText = q + 1;   
 });
 
-let down = document.getElementById("down");
+
 down.addEventListener('click',function(){
    if(qte.innerText > 0){
      qte.innerText = qte.innerText - 1;
    }
 });
+let ap = document.getElementById('qtePanier');
+let quantite = document.getElementById("qte");
+let addCart = document.getElementById("imgAddCart");
+
+
+function functAddCart(g){
+
+  addCart.addEventListener('click',function(){
+    // ajouter qte dans affichage panier
+    if(document.location.href.includes('produit'+g)){
+     if(localStorage.getItem('produit'+g)==null){
+       let s = quantite.innerText;
+       ap.innerText= s ;
+       localStorage.setItem('produit'+g,s);
+     }
+      else{
+        let q = parseInt(localStorage.getItem('produit'+g));
+        let d =  ap.innerText ;
+        let n = parseInt(q);
+        let m = parseInt(d);
+        let s = parseInt(quantite.innerText);
+
+        ap.innerText =  s+ m ;
+        
+        
+        localStorage.setItem('produit'+g, q+s);
+      }
+     
+    }
+ });
+}
+
+functAddCart(1);
+functAddCart(2);
+functAddCart(3);
+// addCart.addEventListener('click',function(){
+//    // ajouter qte dans affichage panier
+//    if(document.location.href.includes('produit1')){
+//     if(localStorage.getItem("panier1")==null){
+//       let s = quantite.innerText;
+//       ap.innerText= s ;
+//       localStorage.setItem("panier1",s);
+//     }
+//      else{
+//        let q = parseInt(localStorage.getItem("panier1"));
+//        let d =  ap.innerText ;
+//        let n = parseInt(q);
+//        let m = parseInt(d);
+//        ap.innerText = n + m ;
+
+//        let f = ap.innerText ;
+//        localStorage.setItem("panier1", f);
+//      }
+    
+//    }
+   
+ 
+// });
 
 

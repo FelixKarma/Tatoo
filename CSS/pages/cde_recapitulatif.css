@@ -1,0 +1,18 @@
+.img_prod{
+    width:100px;
+    height:100px;
+}
+
+main{
+
+    position:absolute;
+    top:200px;
+    min-height: 700px;;
+}
+#produit_cde{
+
+}
+
+#produit1, #produit2, #produit3{
+    display :none;
+}

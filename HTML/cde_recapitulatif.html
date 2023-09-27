@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="/CSS/structure.css">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/pages/index.css">
+    <link rel="stylesheet" href="/CSS/pages/cde_recapitulatif.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
-<body>
+<body class="mx-auto">
   <header>
     <div id="header">
         <div id="div_login">
@@ -26,7 +28,8 @@
           <!-- panier -->
          <div id="panier_menu"><!-- menu -->
               <img id="btn_menu"src="/IMG/menu.png" alt="menu">
-              <img  src="/IMG/panier.png" alt="panier">
+              <a href="cde_recapitulatif.html"><img  src="/IMG/panier.png" alt="panier"></a>
+              <div id="qtePanier"></div>
          </div> 
           <!-- image proincipal -->
           <div id="pos">
@@ -45,32 +48,80 @@
           
         </nav>
       </div>
-         </header>
-    <main>
+  </header>
+    <main class="container" >
         <section>
           <h1>recapitulatif</h1>
-           <article>
-           <div>
-            <span><img src="/IMG/pages/listing_produits/JAGUA.jpg" alt=""></span>
-            <h2>Titre produit</h2>
-            <p>descirption</p>
-            <span>prix</span>
-            <span>-</span>
-            <span>QTe</span>
-            <span>+</span>
-          </div> 
-          <hr>
-          <div>
-            <span>Sous total</span>
-            <span>prix</span>
-            <hr>
-            <span>Livraison</span>
-            <span>prix</span>
-            <hr>
-            <span>TOTAL</span>
-            <span>prix</span>
-          </div>
-          <div>
+           <article >
+            <div class="card mb-3 " id="produit1" style="max-width: 700px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="/IMG/pages/listing_produits/JAGUA.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">"CKit Jagua"</h5>
+                    <p class="card-text">44,90€</p>
+                    <div>
+                      <span id="down1">-</span>
+                      <span id="quantite1"></span>
+                      <span id="up1">+</span>
+                    </div>
+                    <p class="card-text"><small class="text-body-secondary">Kit Jagua (2 gels 15 ml + 10 pochoirs)</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-3" id="produit2" style="max-width: 700px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src= "/IMG/pages/listing_produits/packshotkit.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">"Sailor Kit"</h5>
+                    <p class="card-text">29,90€</p>
+                    <div>
+                      <span id="down2">-</span>
+                      <span id="quantite2"></span>
+                      <span id="up2">+</span>
+                    </div>
+                    
+
+                    <p class="card-text"><small class="text-body-secondary"> "Une planche avec ces 13 pochoirs vraiment minis à découper et une fiole d'encre pour tous les faire !"
+                    </small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" id="produit3" style="max-width: 700px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src=  "/IMG/pages/listing_produits/Henne-main-en-tube-brun-30g-Hasmi.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">"Henné pour main"</h5>
+                    <p class="card-text">29,90€</p>
+                    <div>
+                      <span id="down3">-</span>
+                      <span id="quantite3"></span>
+                      <span id="up3">+</span>
+                    </div>
+                    <p class="card-text"><small class="text-body-secondary"> "Henné main en tube brun 30g – Hasmi "
+                    </small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
             <form action="cde_etape_2_1.html" method="post">
               <input type="submit" value="Commander">
             </form>
@@ -91,5 +142,8 @@
       </div>
     </footer>
     <script src="/JS/header.js"></script>
+    <script src="/JS/cde_recapitulatif.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/CSS/pages/detail_produit.css">
     <link rel="stylesheet" href="/CSS/pages/index.css">
 </head>
-<body>
+<body class="mx-auto">
   <header>
     <div id="header">
         <div id="div_login">
@@ -29,7 +29,8 @@
           <!-- panier -->
          <div id="panier_menu"><!-- menu -->
               <img id="btn_menu"src="/IMG/menu.png" alt="menu">
-              <img  src="/IMG/panier.png" alt="panier">
+              <a href="cde_recapitulatif.html"><img  src="/IMG/panier.png" alt="panier"></a>
+              <div id="qtePanier"></div>
          </div> 
           <!-- image proincipal -->
           <div id="pos">
@@ -49,46 +50,46 @@
         </nav>
       </div>
   </header>
-    <main class="container mt-5 ">  
-      <section>
-        <article>
-          <div id="h1_prod">
-            <h1 id="titre"></h1>
-          </div> 
-          <div   id="display_prod">
-            <img id="image"  src="" alt="">
-            
-            <div id="get_buy">
-              <span id="price"></span>
-              <span id="down">-</span>
-             <span id="qte">0</span>
-              <span id="up">+</span>
-              <span  id="imgAddCart"><img  src="/IMG/pages/detail_produit/ajout_panier 1.png"  alt=""></span>
-              
-              
-            </div>
-            <div id="div_desc"><p id="description"></p></div>
-            
-          </div>
-        </article>
-         
-                <!-- <article>
-                    <h2>commentaire</h2>
-                    <div>
-                        <span>Note</span>
-                        <span><img src="/IMG/pages/detail_produit/etoile.png" alt="">
-                          <img src="/IMG/pages/detail_produit/etoile.png" alt="">
-                          <img src="/IMG/pages/detail_produit/etoile.png" alt="">
-                          <img src="/IMG/pages/detail_produit/etoile.png" alt="">
-                          <img src="/IMG/pages/detail_produit/etoile.png" alt=""></span>
-                  
-                    </div>
-                    <textarea id="user-text" rows="10" cols="50" maxlength="100"></textarea>
-<div id="char-length">Characters restant 200</div>
-                  
+    <main class="container ">  
+      <section class="mx-auto">
+        <table class="mx-auto">
+            <tr>
+              <td id="titreTab"><h1 id="titre"></h1></td>
+              <td ><span id="price"></span></td>
+              <td><span id="down">-</span></td>
+              <td> <span id="qte">0</span></td>
+              <td><span id="up">+</span></td>
+              <td> <img  id="imgAddCart" src="/IMG/pages/detail_produit/ajout_panier 1.png"  alt="">
+              </td>
+            </tr>
+        </table> 
+        <table >
+           <tr>
+              <td><img id="image"  src="" alt=""></td>
+              <td id="desc"><p id="description"></p></td>
+           </tr>
+       </table> 
+          <table id="Comment">
+            <tr>
+              <td><h2>commentaire</h2></td>
+              <td> Note  <img src="/IMG/pages/detail_produit/etoile.png" alt="">
+                <img src="/IMG/pages/detail_produit/etoile.png" alt="">
+                <img src="/IMG/pages/detail_produit/etoile.png" alt="">
+                <img src="/IMG/pages/detail_produit/etoile.png" alt="">
+                <img src="/IMG/pages/detail_produit/etoile.png" alt=""></div>
+            </td>
+            </tr>
+            </table>
 
-                </article>
-                </article> -->
+             <textarea  class="mt-5" id="user-text" rows="10" cols="50" maxlength="100"></textarea>
+
+              <div id="char-length">/200</div>
+
+
+ 
+
+                    
+
         </section>
     </main>
     <footer>
