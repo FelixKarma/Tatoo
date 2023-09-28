@@ -8,3 +8,18 @@ section {
     flex-direction: column;
    
 }
+label{
+    margin:25px;
+}
+input{
+    border-radius: 10px;
+    width:100%;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+#new{
+    display:flex;
+    justify-content: center;
+}

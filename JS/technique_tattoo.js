@@ -9,7 +9,10 @@ class Techniques  {
 let tattoo1 = new Techniques("Machine électrique", '/IMG/pages/technique_tattoo/LOGO_MACHINE_TATOUAGE_ELECTRIQUE.png', `C’est la méthode la plus répandue et la plus moderne. 
 Elle consiste simplement à utiliser un dermographe électrique ou ce qu’on appelle un « machine gun ». 
 
-Cet outil est fait de plein de petites aiguilles qui puisent leur encre dans une recharge.`):
-
-let car1 = document.getElementById("image1");
-car1.setAttribute("src", tattoo1.image);
+Cet outil est fait de plein de petites aiguilles qui puisent leur encre dans une recharge.`);
+let img = document.getElementById("image1");
+let titre1 = document.getElementById("titre1");
+let p1 = document.getElementById("p1");
+img.setAttribute("src", tattoo1.image);
+titre1.innerText =  tattoo1.titre ;
+p1.innerText = tattoo1.image ;

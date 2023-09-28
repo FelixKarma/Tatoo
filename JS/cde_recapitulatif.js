@@ -86,7 +86,6 @@ function figureOut(){
 
 let btn = document.getElementById('btn_cde');
 btn.addEventListener("click", function () {
-  alert('dddd');
   window.location.assign('cde_etape_2_1.html');
 })
  
