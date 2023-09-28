@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/connexion.css">
     <link rel="stylesheet" href="/CSS/structure.css">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
     <link rel="stylesheet" href="/CSS/pages/index.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+
+
 </head>
 <body class="mx-auto">
   <header>
@@ -48,32 +60,58 @@
       </div>
   </header>
     <main>
-        <section>
-          <div>
-          <h1>Inscription</h1>
-           <form action="#" method="post">
-            <label for="nom"><input placeholder="nom" type="text" name="nom" id="nom"></label>
-            <label for="prenom"><input placeholder="prenom" type="text" name="prenom" id="prenom"></label>
-            <br>
-            <label for="email"><input placeholder="email" type="email" name="email" id="email"></label>
-            <br>
-            <label for="motdepass"><input placeholder="mot de passe" type="password" name="motdepass" id="motdepass"></label>
-            <br>
-            <P>Au moins une minuscule</P>
-            <P>Au moins une majuscule</P>
-            <p>Au moins un caractère spécial (@#%$)</p>
-            <p>Au moins 8 caractères</p>
-            <br>
-            <label for="cgv"><input type="checkbox" name="cgv" id="cgv">J’accepte  les conditions générales d’utilisation</label>
-            <br>
-            <label for="news"><input type="checkbox" name="news" id="news">Je souhaite m’abonné a la Newsletter</label>
-            <br>
-            <input type="submit" value="S'inscrire">
-            <br>
-           </form>
+        <!-- REGISTRATION FORM -->
+<div class="text-center" style="padding:50px 0">
+  <div class="logo">inscription</div>
+  <!-- Main Form -->
+  <div class="login-form-1">
+      <form id="register-form" class="text-left">
+          <div class="login-form-main-message"></div>
+          <div class="main-login-form">
+              <div class="login-group">
+                  <div class="form-group">
+                      <label for="reg_username" class="sr-only">Email address</label>
+                      <input type="text" class="form-control" id="reg_username" name="reg_username" placeholder="username">
+                  </div>
+                  <div class="form-group">
+                      <label for="reg_password" class="sr-only">Password</label>
+                      <input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="password">
+                  </div>
+                  <div class="form-group">
+                      <label for="reg_password_confirm" class="sr-only">Password Confirm</label>
+                      <input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="confirm password">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="reg_email" class="sr-only">Email</label>
+                      <input type="text" class="form-control" id="reg_email" name="reg_email" placeholder="email">
+                  </div>
+                  <div class="form-group">
+                      <label for="reg_fullname" class="sr-only">Full Name</label>
+                      <input type="text" class="form-control" id="reg_fullname" name="reg_fullname" placeholder="full name">
+                  </div>
+<div class="form-group login-group-checkbox">
+                      <input type="radio" class="" name="reg_gender" id="male" placeholder="username">
+                      <label for="male">male</label>
+
+                      <input type="radio" class="" name="reg_gender" id="female" placeholder="username">
+                      <label for="female">female</label>
+                  </div>
+
+                  <div class="form-group login-group-checkbox">
+                      <input type="checkbox" class="" id="reg_agree" name="reg_agree">
+                      <label for="reg_agree">i agree with <a href="#">terms</a></label>
+                  </div>
+              </div>
+              <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
           </div>
-          
-        </section>
+          <div class="etc-login-form">
+              <p>already have an account? <a href="#">login here</a></p>
+          </div>
+      </form>
+  </div>
+  <!-- end:Main Form -->
+</div>
     </main>
     <footer>
       <div id="div_img">
@@ -87,6 +125,8 @@
         <a href="">Conditions générales</a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="../JS/inscription.js"></script>
     <script src="/JS/header.js"></script>
 </body>
 </html>
