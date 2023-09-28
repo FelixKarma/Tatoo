@@ -1,19 +1,42 @@
-(function () {
-	'use strict'
+(function($) {
+    "use strict";
 
-	// Fetch all the forms we want to apply custom Bootstrap validation styles to
-	var forms = document.querySelectorAll('.needs-validation')
+    // Options for Message
+    //----------------------------------------------
+  var options = {
+      'btn-loading': '<i class="fa fa-spinner fa-pulse"></i>',
+      'btn-success': '<i class="fa fa-check"></i>',
+      'btn-error': '<i class="fa fa-remove"></i>',
+      'msg-success': 'All Good! Redirecting...',
+      'msg-error': 'Wrong login credentials!',
+      'useAJAX': true,
+  };
 
-	// Loop over them and prevent submission
-	Array.prototype.slice.call(forms)
-		.forEach(function (form) {
-			form.addEventListener('submit', function (event) {
-				if (!form.checkValidity()) {
-					event.preventDefault()
-					event.stopPropagation()
-				}
+    // Login Form
+    //----------------------------------------------
+    // Validation
+  $("#login-form").validate({
+      rules: {
+      lg_username: "required",
+        lg_password: "required",
+    },
+      errorClass: "form-invalid"
+  });
 
-				form.classList.add('was-validated')
-			}, false)
-		})
-})()
+    // Form Submission
+  $("#login-form").submit(function() {
+      remove_loading($(this));
+
+        if(options['useAJAX'] == true)
+        {
+            // Dummy AJAX request (Replace this with your AJAX code)
+          // If you don't want to use AJAX, remove this
+        dummy_submit_form($(this));
+
+          // Cancel the normal submission.
+          // If you don't want to use AJAX, remove this
+        return false;
+        }
+  });
+
+})
