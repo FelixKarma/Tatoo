@@ -31,14 +31,10 @@ function azerty(g){
   let p = localStorage.getItem("produit"+g);
   let t = document.getElementById("quantite"+g);
   t.innerText = p ;
-
   let d = document.getElementById("down"+g);
   let u = document.getElementById("up"+g);
   let s = document.getElementById("produit"+g);
   let qte = parseInt(p);
-
-
-
   d.addEventListener("click", function () {
     if (qte >0) {
         qte--;
@@ -52,25 +48,21 @@ function azerty(g){
         }
         //modification du nbre article panier
         ajoutPanier();
-
      }else {
     // suppression du produit
     localStorage.removeItem("produit"+g);
     s.style.display = "none"; 
     }   
 });
-
 u.addEventListener("click", function () {
   if (qte > 0) {
     qte++;
-    
     t.innerText = qte;
     localStorage.setItem("produit"+g, qte);
     figureOut();
      //modification du nbre article panier
      ajoutPanier();
   }
-  
 });  
 }
 figureOut();
@@ -90,4 +82,14 @@ function figureOut(){
    let y = w.toFixed(2);
   total.innerText = y+"€"; 
 }
+
+
+let btn = document.getElementById('btn_cde');
+btn.addEventListener("click", function () {
+  alert('dddd');
+  window.location.assign('cde_etape_2_1.html');
+})
+ 
+ 
+ 
 

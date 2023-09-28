@@ -1,0 +1,10 @@
+section {
+    width:420px;
+    height:400px;
+    margin-top: 200px;
+    border-radius: 20px;
+    border:2px solid black ;
+    display:flex; 
+    flex-direction: column;
+   
+}
