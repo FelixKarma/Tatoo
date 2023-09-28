@@ -101,6 +101,7 @@ function functAddCart(g){
        let s = quantite.innerText;
        ap.innerText= s ;
        localStorage.setItem('produit'+g,s);
+       ajoutPanier();
      }
       else{
         let q = parseInt(localStorage.getItem('produit'+g));
@@ -113,6 +114,7 @@ function functAddCart(g){
         
         
         localStorage.setItem('produit'+g, q+s);
+        ajoutPanier();
       }
      
     }
