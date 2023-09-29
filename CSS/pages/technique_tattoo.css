@@ -1,5 +1,7 @@
 section{
     background-color: #D9D9D9; 
+    width: 778px;
+    margin-top:250px;
 }
 article{
     display:flex;
@@ -27,6 +29,11 @@ article p {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width:700px; 
+    width:400px; 
     align-items: flex-end;
+}
+#div_btn{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }

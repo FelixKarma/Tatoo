@@ -23,7 +23,7 @@ function verif(id,id_error, empty, error_regex, the_regex ){
     r.addEventListener("blur", function () {
 
          reponse = ck_champ_jquery(id,id_error,empty,error_regex,the_regex);
-         alert(reponse);
+         alert(" reponse"+reponse);
          if(reponse ==1 ){
              let a = document.getElementById(id);
             a.focus();
@@ -34,4 +34,4 @@ function verif(id,id_error, empty, error_regex, the_regex ){
          return false ;
     });
 }
-    verif('password','passerror','le champ doit etre rempli','il y a une erreur dans ce que vous avez rempli','^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$');
+    verif('password','passerror', false , 'le champ doit etre rempli','il y a une erreur dans ce que vous avez rempli','^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$');

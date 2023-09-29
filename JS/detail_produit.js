@@ -206,4 +206,9 @@ function onStarClick(event) {
     }
 }
 
-
+//enregistrement du comment
+// let a = document.getElementById('btn_comment') ;
+// let c = document.getElementById('textarea') ;
+// a.addEventListener("click", function() {
+//     alert("ccc");
+// })
