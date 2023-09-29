@@ -1,0 +1,29 @@
+main{
+    margin-top:250px;
+}
+article{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid black;
+    border-radius:20px;
+    min-height: 400px;
+    display:flex;
+    flex-direction: column;
+}
+img{
+    width:50px;
+    height:50px;
+}
+input{
+    display: flex;
+width: 374px;
+padding: 10px 15px;
+
+align-items: flex-start;
+gap: 5px;
+border-radius: 20px;
+border: 1px solid #E2E1E5;
+background: #FFF;
+
+}

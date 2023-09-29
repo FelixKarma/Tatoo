@@ -1,42 +1,28 @@
-(function($) {
-    "use strict";
+let btn = document.getElementById('btn_connect');
+let email = document.getElementById('email');
+let pass = document.getElementById('password');
 
-    // Options for Message
-    //----------------------------------------------
-  var options = {
-      'btn-loading': '<i class="fa fa-spinner fa-pulse"></i>',
-      'btn-success': '<i class="fa fa-check"></i>',
-      'btn-error': '<i class="fa fa-remove"></i>',
-      'msg-success': 'All Good! Redirecting...',
-      'msg-error': 'Wrong login credentials!',
-      'useAJAX': true,
-  };
 
-    // Login Form
-    //----------------------------------------------
-    // Validation
-  $("#login-form").validate({
-      rules: {
-      lg_username: "required",
-        lg_password: "required",
-    },
-      errorClass: "form-invalid"
-  });
-
-    // Form Submission
-  $("#login-form").submit(function() {
-      remove_loading($(this));
-
-        if(options['useAJAX'] == true)
-        {
-            // Dummy AJAX request (Replace this with your AJAX code)
-          // If you don't want to use AJAX, remove this
-        dummy_submit_form($(this));
-
-          // Cancel the normal submission.
-          // If you don't want to use AJAX, remove this
-        return false;
-        }
-  });
-
+ let p = localStorage.getItem("login");
+ if(p==1){
+   document.location.assign('mon_compte.html');
+ }
+btn.addEventListener("click",()=>{
+  if(email.value == 'aaaa@bbb.fr' && pass.value == 'admin'){
+    localStorage.setItem("login", 1);
+    document.location.assign('mon_compte.html');
+  }else{
+    
+    let a = document.getElementById('alert');
+    a.innerText = "Erreur dans le formulaire.";
+   
+    a.classList.add("alert");
+    a.classList.add("alert-danger");
+    setTimeout(() => {
+      a.classList.remove("alert");
+      a.classList.remove("alert-danger");
+      a.innerText ="";
+    }, "1000");
+    
+  }
 })

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/CSS/structure.css">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/pages/index.css">
+    <link rel="stylesheet" href="/CSS/pages/cde_etape_2_2_1.css">
 </head>
 <body class="mx-auto">
   <header>
@@ -47,26 +47,51 @@
         </nav>
       </div>
   </header>
-    <main>
-        <section>
-        
-          <article>
-            <h1>Vos informations</h1>
-            <form action="cde_paiement.html" method="post">
-              <label for="nom"><input value="nom du client" type="text" name="nom" id="nom"></label>
-              <label for="prenom"><input value="prenom du client"  type="text" name="prenom" id="prenom"></label>
-              <br>
-              <p>nom@mail.fr</p>
-              <label for="adresse"><input placeholder="adresse" type="text" name="adresse" id="adresse"></label>
-              <br>
-              <label for="cp"><input type="number" min="5"  max="5" name="cp" id="cp"></label>
-              <label for="ville"><input placeholder="ville" type="text" name="ville" id="ville"></label>
-           <br>
-           <input type="submit" value="Enregistrer">
-            </form>
-          </article>
-        </section>
-    </main>
+  <main>
+    <section>
+      <article>
+        <div class="formName" class="d-flex flex-row mx-auto">
+          <h1>Mon compte</h1>
+        </div>
+        <form method="cde_paiement.html" action="post">
+          <div class="formName" class="d-flex flex-row mx-auto">
+            <span class="name"><label for="nom">Nom <br><input type="text" name="nom" id="nom"></label></span>
+            <span class="name">
+              <label for="prenom">Prenom <br><input type="text" name="prenom" id="prenom"></label>
+            </span>
+          </div>
+          <div class="formName " class="d-flex flex-row mx-auto">
+
+            <span class="name">
+              <label for="email">email <br><input class="input" type="email" name="email" id="email"></label>
+            </span>
+          </div>
+          <div class="formName " class="d-flex flex-row mx-auto">
+
+            <span class="name">
+              <label for="adresse">adresse <br><input class="input" type="text" name="adresse" id="adresse"></label>
+            </span>
+          </div>
+
+          <div class="formName " class="d-flex flex-row mx-auto">
+
+            <span class="name">
+              <label for="cp">Code postal <br><input type="text" name="cp" id="cp"></label>
+            </span>
+
+            <span class="name">
+
+              <label for="ville">ville <br><input type="text" name="ville" id="ville"></label>
+            </span>
+          </div>
+          <div class="formName " id="formSubmit" class="d-flex flex-row mx-auto">
+            <input type="submit" class="btn btn-dark btnSubmit"  value="Commander">
+          </div>
+        </form>
+      </article>
+     
+    </section>
+  </main>
     <footer>
       <div id="div_img">
         <a id="insta" href=""></a> <img src="/IMG/ri_instagram-line.png" alt="lien vers instagram" /></a>
