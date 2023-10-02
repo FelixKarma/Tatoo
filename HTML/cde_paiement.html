@@ -51,20 +51,49 @@
     </div>
   </header>
   <main class="container ">
-   <section>
-    <article>
-        <h1> Paiement</h1>
-        <img src="/IMG/pages/cde_paiement/Unknown.jpeg" alt="">
-        <form action="" method="post">
-            <label for="titulaire">Titulaire de la larte <br><input type="text" name="titulaire" id="titulaire"></label>
-            <label for="numero">Numero de la carte <br><input type="text" name="numero" id="numero"></label>
-            <label for="date">date de validité <br><input type="date" name="date" id="date"></label>
-        
-            <label for="cvv">Cryptogramme <br><input type="text" name="cvv" id="cvv"></label>
-       
-            <input type="submit" value="Payer">
-          </form>
-    </article>
+   
+    <div class="container p-0">
+      <div class="card px-4">
+          <p class="h8 py-3">Paiement</p>
+          <div class="row gx-3">
+              <div class="col-12">
+                  <div class="d-flex flex-column">
+                      <p class="text mb-1">Nom du propriétaire</p>
+                      <input class="form-control mb-3" type="text" placeholder="Name" value="Barry Allen">
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="d-flex flex-column">
+                      <p class="text mb-1">Numéro de la carte</p>
+                      <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div class="d-flex flex-column">
+                      <p class="text mb-1">Date d'expiration</p>
+                      <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div class="d-flex flex-column">
+                      <p class="text mb-1">CVV/CVC</p>
+                      <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                  </div>
+              </div>
+              <div class="col-12">
+                  <div class="btn btn-primary mb-3">
+                      <span class="ps-3">Pay $243</span>
+                      <span class="fas fa-arrow-right"></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
    </section>
   </main>
   <footer>
