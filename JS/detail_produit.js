@@ -196,7 +196,7 @@ let comments1 = new CommentsRandom('Pauline920', 'Super produit je suis ravie', 
 
 let comments2 = new CommentsRandom('Marie59160', 'Les tatouages sont parfaits', 5);
 let comments3 = new CommentsRandom('Julie56', 'Bon produit commandez', 3);
-let comments4 = new CommentsRandom('Alizée7000', 'Incroyable je suis trop contente davoir commander la', 4.5);
+let comments4 = new CommentsRandom('Alizée7000', 'Incroyable je suis trop contente davoir commander ce produit', 4.5);
 let comments5 = new CommentsRandom('Supermario3', 'déçu', 1);
 
 
@@ -235,13 +235,13 @@ function showCommentRandom() {
       break;
   }
   comment.innerText = number.comment;
-  note.innerText = number.note;
+  note.innerText = number.note+'/5';
 }
 showCommentRandom();
 setInterval(function(){
 
   showCommentRandom();
-}, 5000) ;
+}, 3000) ;
 
 
 

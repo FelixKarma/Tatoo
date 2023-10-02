@@ -44,7 +44,7 @@ function checkConnect(){
   }
  }
 ajoutPanier() ;
-checkConnect() ;
+//checkConnect() ;
  
 
    
