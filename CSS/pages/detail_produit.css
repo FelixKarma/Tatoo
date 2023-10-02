@@ -91,6 +91,7 @@ textarea{
 
  #pastComments{
    padding:20px;
+   margin-bottom:20px;
    width:800px;
    height:200px;
    border:1px solid black ;
