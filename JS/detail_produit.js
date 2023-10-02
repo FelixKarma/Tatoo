@@ -45,7 +45,7 @@ function showProd() {
             p.innerText = prod1.price;
             d.innerText = prod1.description;
             return true;
-          break;
+            break;
 
           case "produit2":
             t.innerText = prod2.titre;
@@ -63,62 +63,62 @@ function showProd() {
             return true;
             break;
         }
-      } 
-      
+      }
+
     }
-    return false ;
-  } 
+    return false;
+  }
 }
-if(!showProd()){
-    document.location.assign("404.html");
+if (!showProd()) {
+  document.location.assign("404.html");
 }
 
 let qte = document.getElementById("qte");
 let up = document.getElementById("up");
 let down = document.getElementById("down");
-up.addEventListener('click',function(){
-    let q  =parseInt(qte.innerText);
-     qte.innerText = q + 1;   
+up.addEventListener('click', function () {
+  let q = parseInt(qte.innerText);
+  qte.innerText = q + 1;
 });
 
 
-down.addEventListener('click',function(){
-   if(qte.innerText > 0){
-     qte.innerText = qte.innerText - 1;
-   }
+down.addEventListener('click', function () {
+  if (qte.innerText > 0) {
+    qte.innerText = qte.innerText - 1;
+  }
 });
 let ap = document.getElementById('qtePanier');
 let quantite = document.getElementById("qte");
 let addCart = document.getElementById("imgAddCart");
 
 
-function functAddCart(g){
+function functAddCart(g) {
 
-  addCart.addEventListener('click',function(){
+  addCart.addEventListener('click', function () {
     // ajouter qte dans affichage panier
-    if(document.location.href.includes('produit'+g)){
-     if(localStorage.getItem('produit'+g)==null){
-       let s = quantite.innerText;
-       ap.innerText= s ;
-       localStorage.setItem('produit'+g,s);
-       ajoutPanier();
-     }
-      else{
-        let q = parseInt(localStorage.getItem('produit'+g));
-        let d =  ap.innerText ;
+    if (document.location.href.includes('produit' + g)) {
+      if (localStorage.getItem('produit' + g) == null) {
+        let s = quantite.innerText;
+        ap.innerText = s;
+        localStorage.setItem('produit' + g, s);
+        ajoutPanier();
+      }
+      else {
+        let q = parseInt(localStorage.getItem('produit' + g));
+        let d = ap.innerText;
         let n = parseInt(q);
         let m = parseInt(d);
         let s = parseInt(quantite.innerText);
 
-        ap.innerText =  s+ m ;
-        
-        
-        localStorage.setItem('produit'+g, q+s);
+        ap.innerText = s + m;
+
+
+        localStorage.setItem('produit' + g, q + s);
         ajoutPanier();
       }
-     
+
     }
- });
+  });
 }
 
 functAddCart(1);
@@ -132,39 +132,17 @@ functAddCart(3);
   // set attribute max length 
   textarea.setAttribute("maxlength", max_length);
 
-  textarea.addEventListener("input", function() {
-      let value_length = this.value.length;
-      if (value_length > max_length) {  
-          this.value = this.value.substring(0, max_length);
-          value_length = this.value.length;
-      }  
-      document.getElementById("char-length").innerText = "Characters restant "+(max_length - value_length);
+  textarea.addEventListener("input", function () {
+    let value_length = this.value.length;
+    if (value_length > max_length) {
+      this.value = this.value.substring(0, max_length);
+      value_length = this.value.length;
+    }
+    document.getElementById("char-length").innerText = "Characters restant " + (max_length - value_length);
   });
 
 })();
-// addCart.addEventListener('click',function(){
-//    // ajouter qte dans affichage panier
-//    if(document.location.href.includes('produit1')){
-//     if(localStorage.getItem("panier1")==null){
-//       let s = quantite.innerText;
-//       ap.innerText= s ;
-//       localStorage.setItem("panier1",s);
-//     }
-//      else{
-//        let q = parseInt(localStorage.getItem("panier1"));
-//        let d =  ap.innerText ;
-//        let n = parseInt(q);
-//        let m = parseInt(d);
-//        ap.innerText = n + m ;
 
-//        let f = ap.innerText ;
-//        localStorage.setItem("panier1", f);
-//      }
-    
-//    }
-   
- 
-// });
 document.getElementById("$")
 // On récupère toutes les étoiles
 var toutesLesEtoiles = $('.stars .star');
@@ -178,37 +156,93 @@ toutesLesEtoiles.click(onStarClick);
 // On gère ce qui se passe lors du clic d'une étoile
 function onStarClick(event) {
 
-    // On récupère l'objet cliqué, AU FORMAT JQUERY
-    var etoileCliquée = $(this);
-    // console.log(etoileCliquée);
+  // On récupère l'objet cliqué, AU FORMAT JQUERY
+  var etoileCliquée = $(this);
+  // console.log(etoileCliquée);
 
-    // On récupère son index ("Quelle étoile a été cliquée ?") depuis sont attribut data-index
-    var indexCliqué = etoileCliquée.data("index");
-    // console.log(indexCliqué);
+  // On récupère son index ("Quelle étoile a été cliquée ?") depuis sont attribut data-index
+  var indexCliqué = etoileCliquée.data("index");
+  // console.log(indexCliqué);
 
-    // On récupère son parent (afin de rendre ça réutilisable pour d'autres groupes)
-    var parent = $(this).parent();
+  // On récupère son parent (afin de rendre ça réutilisable pour d'autres groupes)
+  var parent = $(this).parent();
 
-    // Style : "Vider" toutes les étoiles.. de ce groupe
-    parent.find('.star').addClass('stargrey');
-    parent.find('.star').removeClass('yellow');
+  // Style : "Vider" toutes les étoiles.. de ce groupe
+  parent.find('.star').addClass('stargrey');
+  parent.find('.star').removeClass('yellow');
 
-    //// Style : "Remplir" le bon nombre d'étoiles
-    // Pour ce groupe, pour chaque étoile de 0 jusqu'à celle cliquée..
-    for (var i = 0; i <= indexCliqué; i++) {
+  //// Style : "Remplir" le bon nombre d'étoiles
+  // Pour ce groupe, pour chaque étoile de 0 jusqu'à celle cliquée..
+  for (var i = 0; i <= indexCliqué; i++) {
 
-        var etoile = parent.find('.star[data-index=' + i + ']');
-        // console.log( etoile );
+    var etoile = parent.find('.star[data-index=' + i + ']');
+    // console.log( etoile );
 
-        // Je remplie
-        etoile.addClass('yellow');
-        etoile.removeClass('stargrey');
-    }
+    // Je remplie
+    etoile.addClass('yellow');
+    etoile.removeClass('stargrey');
+  }
 }
 
-//enregistrement du comment
-// let a = document.getElementById('btn_comment') ;
-// let c = document.getElementById('textarea') ;
-// a.addEventListener("click", function() {
-//     alert("ccc");
-// })
+class CommentsRandom {
+  constructor(pseudo, comment, note) {
+    this.pseudo = pseudo;
+    this.comment = comment;
+    this.note = note;
+  }
+}
+
+let comments1 = new CommentsRandom('Pauline920', 'Super produit je suis ravie', 4);
+
+let comments2 = new CommentsRandom('Marie59160', 'Les tatouages sont parfaits', 5);
+let comments3 = new CommentsRandom('Julie56', 'Bon produit commandez', 3);
+let comments4 = new CommentsRandom('Alizée7000', 'Incroyable je suis trop contente davoir commander la', 4.5);
+let comments5 = new CommentsRandom('Supermario3', 'déçu', 1);
+
+
+function getRandomArbitrary(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
+function showCommentRandom() {
+  let rand = getRandomArbitrary(1, 5);
+  let c = localStorage.getItem("comment");
+  console.log(c);
+  //localStorage.setItem("comment", c);
+  while (rand == c) {
+    rand = getRandomArbitrary(1, 5);
+    localStorage.setItem("comment", rand);
+  }
+  // numero aleatoire du comment
+
+  let comment = document.getElementById('comment');
+  let note = document.getElementById('note');
+  let number;
+  switch (rand) {
+    case 1:
+      number = comments1;
+      break;
+    case 2:
+      number = comments2;
+      break;
+    case 3:
+      number = comments3;
+      break;
+    case 4:
+      number = comments4;
+      break;
+    case 5:
+      number = comments5;
+      break;
+  }
+  comment.innerText = number.comment;
+  note.innerText = number.note;
+}
+showCommentRandom();
+setInterval(function(){
+
+  showCommentRandom();
+}, 5000) ;
+
+
+
+

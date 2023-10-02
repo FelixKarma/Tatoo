@@ -36,17 +36,15 @@ function checkConnect(){
     let a = document.getElementById('login');
     let b = document.getElementById('div_login');
   if(p==1){
-    
     a.style.display = 'none';
     b.style.display = 'block';
   }else{
-    a.style.display = 'blcok';
+    a.style.display = 'block';
     b.style.display = 'none';
   }
  }
-
 ajoutPanier() ;
-//checkConnect() ;
+checkConnect() ;
  
 
    

@@ -45,3 +45,9 @@
           return false;
           }
     });
+
+    
+    let p = localStorage.getItem("login");
+    if(p==1){
+      document.location.assign('mon_compte.html');
+    }

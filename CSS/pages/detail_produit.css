@@ -63,9 +63,7 @@ textarea{
    width:800px;
 }
 
-{
-   box-sizing: border-box;
- }
+
  
  
  .container {
@@ -89,4 +87,11 @@ textarea{
  
  .star:hover {
      cursor: pointer;
+ }
+
+ #pastComments{
+   width:800px;
+   height:200px;
+   border:1px solid black ;
+   display:block;
  }
