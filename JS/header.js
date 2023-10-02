@@ -31,9 +31,22 @@ function ajoutPanier(){
         qua.innerHTML = j ;
     }
 }
-
+function checkConnect(){
+    let p = localStorage.getItem("login");  
+    let a = document.getElementById('login');
+    let b = document.getElementById('div_login');
+  if(p==1){
+    
+    a.style.display = 'none';
+    b.style.display = 'block';
+  }else{
+    a.style.display = 'blcok';
+    b.style.display = 'none';
+  }
+ }
 
 ajoutPanier() ;
+//checkConnect() ;
  
 
    

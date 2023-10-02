@@ -3,10 +3,12 @@ let email = document.getElementById('email');
 let pass = document.getElementById('password');
 
 
- let p = localStorage.getItem("login");
+   let p = localStorage.getItem("login");
  if(p==1){
    document.location.assign('mon_compte.html');
  }
+
+
 btn.addEventListener("click",()=>{
   if(email.value == 'aaaa@bbb.fr' && pass.value == 'admin'){
     localStorage.setItem("login", 1);
