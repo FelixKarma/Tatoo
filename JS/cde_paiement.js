@@ -9,6 +9,6 @@ function figureOut(){
      let total =  document.getElementById("totalPaiement");
      let w = total1 +total2+total3 ;
      let y = w.toFixed(2);
-    total.innerText = y+" €"; 
+    total.value= y+" €"; 
   }
   figureOut();
