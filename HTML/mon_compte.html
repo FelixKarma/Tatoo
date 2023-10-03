@@ -17,16 +17,13 @@
 <body class="mx-auto">
   <header>
     <div id="header">
+      <div id="div_logout">
+        <a  href="connexion.html">connexion</a> / <a href="inscription.html">inscription</a> 
+      </div>
+
       <div id="div_login">
-        <div id="login">
-          <a  href="connexion.html">connexion</a> / <a href="inscription.html">inscription</a> 
-        </div>
-
-          <div id="div_login">
-            <img src="/IMG/subway_admin.png" alt="">
-            <div id="btnLogout">X</div>
-          </div>
-
+        <img src="/IMG/subway_admin.png" alt="">
+        <div id="btnLogout">X</div>
       </div>
       <div id="logo">
         <!-- logo -->
@@ -66,33 +63,33 @@
         </div>
         <form action="post">
           <div class="formName" class="d-flex flex-row mx-auto">
-            <span class="name"><label for="nom">Nom <br><input type="text" name="nom" id="nom"></label></span>
+            <span class="name"><label for="nom">Nom <br><input type="text" value="Wyon" name="nom" id="nom"></label></span>
             <span class="name">
-              <label for="prenom">Prenom <br><input type="text" name="prenom" id="prenom"></label>
+              <label for="prenom">Prenom <br><input type="text" value="Romain" name="prenom" id="prenom"></label>
             </span>
           </div>
           <div class="formName " class="d-flex flex-row mx-auto">
 
             <span class="name">
-              <label for="email">email <br><input class="input" type="email" name="email" id="email"></label>
+              <label for="email">email <br><input class="input" value="aaaaa@aa.fr" type="email" name="email" id="email"></label>
             </span>
           </div>
           <div class="formName " class="d-flex flex-row mx-auto">
 
             <span class="name">
-              <label for="adresse">adresse <br><input class="input" type="text" name="adresse" id="adresse"></label>
+              <label for="adresse">adresse <br><input class="input" value='4 avenue des saules' type="text" name="adresse" id="adresse"></label>
             </span>
           </div>
 
           <div class="formName " class="d-flex flex-row mx-auto">
 
             <span class="name">
-              <label for="cp">Code postal <br><input type="text" name="cp" id="cp"></label>
+              <label for="cp">Code postal <br><input type="text" value="59000" name="cp" id="cp"></label>
             </span>
 
             <span class="name">
 
-              <label for="ville">ville <br><input type="text" name="ville" id="ville"></label>
+              <label for="ville">ville <br><input value="Lille" type="text" name="ville" id="ville"></label>
             </span>
           </div>
           <div class="formName " id="formSubmit" class="d-flex flex-row mx-auto">

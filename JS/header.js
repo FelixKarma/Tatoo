@@ -1,6 +1,3 @@
-
-
-
 function ajoutPanier(){
     let btn_menu = document.getElementById("btn_menu");
     let menu = document.getElementById("menu");
@@ -30,23 +27,23 @@ function ajoutPanier(){
 }
 function checkConnect(){
     let p = localStorage.getItem("login");  
-    let a = document.getElementById('login');
     let b = document.getElementById('div_login');
-  if(p==1){
-    a.style.display = 'none';
-    b.style.display = 'block';
-  }else{
-    a.style.display = 'block';
-    b.style.display = 'none';
-  }
+    let c = document.getElementById('div_logout');
+   if(p==1){
+     c.style.display = 'none';
+     b.style.display = 'flex';
+   }else{
+     c.style.display = 'flex';
+     b.style.display = 'none';
+   }
  }
 ajoutPanier() ;
 checkConnect() ;
 
-let p = localStorage.getItem("login");
- if(p==0){
-    document.location.assign('connexion.html');
- }
+  // let p = localStorage.getItem("login");
+  //  if(p==0){
+  //     document.location.assign('connexion.html');
+  //  }
  let logOut= document.getElementById('btnLogout');
 // deconnecion du compte
 logOut.addEventListener("click",()=>{

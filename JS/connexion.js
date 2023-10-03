@@ -3,10 +3,11 @@ let email = document.getElementById('email');
 let pass = document.getElementById('password');
 
 
-   let g = localStorage.getItem("login");
- if(g==1){
-   document.location.assign('mon_compte.html');
- }
+//    let g = localStorage.getItem("login");
+
+//  if(g==1){
+//    document.location.assign('mon_compte.html');
+//  }
 
 
 btn1.addEventListener("click",()=>{
