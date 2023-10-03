@@ -1,20 +1,33 @@
-let p = localStorage.getItem("login");
-if(p==1){
-  document.location.assign('cde_etape_2_2_1.html');
-}
-function verif(id,id_error, empty, error_regex, the_regex ){
-    let r = document.getElementById(id);	
-    r.addEventListener("blur", function () {
+ 
+ let p = localStorage.getItem("login");
+ if(p==1){
+   document.location.assign('cde_etape_2_2_1.html');
+ }
+//  let logOut= document.getElementById('btnLogout');
+//  // deconnecion du compte
+//  logOut.addEventListener("click",()=>{
+//      localStorage.setItem("login", 0);
+//      document.location.assign('connexion.html');
+//    })
 
-         reponse = ck_champ_jquery(id,id_error,empty,error_regex,the_regex);
-         if(reponse ==1 ){
-             let a = document.getElementById(id);
-            a.focus();
-         }else{
-             let a = document.getElementById(id_error);
-             a.innerHTML= '';
-         }
-         return false ;
-    });
-}
-    verif('password','passerror', false , 'le champ doit etre rempli','il y a une erreur dans ce que vous avez rempli','^[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*@[a-z0-9]+([_|\.|-]{1}[a-z0-9]+)*[\.]{1}[a-z]{2,6}$');
+
+ let btn = document.getElementById('btnConnect');
+ let email = document.getElementById('email');
+ let pass = document.getElementById('password');
+
+ btn.addEventListener("click",()=>{
+   if(email.value == 'aaaa@bbb.fr' && pass.value == 'admin'){
+     localStorage.setItem("login", 1);
+     document.location.assign('cde_etape_2_2_1.html');
+   }else{
+     let a = document.getElementById('alert');
+     a.innerText = "Erreur dans le formulaire."; 
+     a.classList.add("alert");
+     a.classList.add("alert-danger");
+     setTimeout(() => {
+       a.classList.remove("alert");
+       a.classList.remove("alert-danger");
+       a.innerText ="";
+     }, "1000");  
+   }
+ })
