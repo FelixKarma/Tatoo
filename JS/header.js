@@ -18,15 +18,12 @@ function ajoutPanier(){
     let p2 =  parseInt(localStorage.getItem("produit2"));
     let p3 =  parseInt(localStorage.getItem("produit3"));
     let qua = document.getElementById("qtePanier");
-    // alert(p1);
-     
+    
      if(p1==null || isNaN(p1)){ p1=0;}
      if(p2==null || isNaN(p2)){p2=0;}
      if(p3==null || isNaN(p3)){p3=0;}
-      console.log('p1'+p1+'p2'+p2+'p3'+p3);
     let j = p1+p2+p3;
     
-    console.log(btn_menu);
     if (qua) {
         qua.innerHTML = j ;
     }
@@ -44,7 +41,19 @@ function checkConnect(){
   }
  }
 ajoutPanier() ;
-//checkConnect() ;
+checkConnect() ;
+
+let p = localStorage.getItem("login");
+ if(p==0){
+    document.location.assign('connexion.html');
+ }
+ let logOut= document.getElementById('btnLogout');
+// deconnecion du compte
+logOut.addEventListener("click",()=>{
+
+    localStorage.setItem("login", 0);
+    document.location.assign('connexion.html');
+  })
  
 
    

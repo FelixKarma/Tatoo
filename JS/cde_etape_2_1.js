@@ -1,14 +1,9 @@
  
- let p = localStorage.getItem("login");
- if(p==1){
-   document.location.assign('cde_etape_2_2_1.html');
+ let g = localStorage.getItem("login");
+ if(g==1){
+    document.location.assign('cde_etape_2_2_1.html');
+ 
  }
-//  let logOut= document.getElementById('btnLogout');
-//  // deconnecion du compte
-//  logOut.addEventListener("click",()=>{
-//      localStorage.setItem("login", 0);
-//      document.location.assign('connexion.html');
-//    })
 
 
  let btn = document.getElementById('btnConnect');

@@ -1,15 +1,15 @@
-let btn = document.getElementById('btn_connect');
+let btn1 = document.getElementById('btn_connect');
 let email = document.getElementById('email');
 let pass = document.getElementById('password');
 
 
-   let p = localStorage.getItem("login");
- if(p==1){
+   let g = localStorage.getItem("login");
+ if(g==1){
    document.location.assign('mon_compte.html');
  }
 
 
-btn.addEventListener("click",()=>{
+btn1.addEventListener("click",()=>{
   if(email.value == 'aaaa@bbb.fr' && pass.value == 'admin'){
     localStorage.setItem("login", 1);
     document.location.assign('mon_compte.html');
