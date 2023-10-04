@@ -36,7 +36,7 @@ function showCommentRandom() {
       let array = [etoile,val];
       localStorage.setItem("comment"+i,array);
       tabs.push(array);
-      
+      text.value = '' ;
     }
   })
   }
