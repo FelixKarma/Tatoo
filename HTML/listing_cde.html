@@ -17,14 +17,17 @@
 
 </head>
 
-<body>
+<body class="mx-auto">
     <header>
         <div id="header">
-            <div id="div_login">
-                <div id="login">
-                    <a href="connexion.html">connexion</a> / <a href="inscription.html">inscription</a>
-                </div>
-            </div>
+            <div id="div_logout">
+                <a  href="connexion.html">connexion</a> / <a href="inscription.html">inscription</a> 
+              </div>
+        
+              <div id="div_login">
+                <img id='btn_menu_client' src="/IMG/subway_admin.png" alt="">
+                <div id="btnLogout">X</div>
+              </div>
             <div id="logo">
                 <!-- logo -->
                 <img src="/IMG/logo.png" alt="image du logo du site internet">
@@ -49,10 +52,17 @@
                 <div class="lien_menu"> <a href="technique_tattoo.html">les techniques de tatouages</a></div>
                 <div class="lien_menu"> <a href="listing_produits.html">boutique - tattoos temparaires</a></div>
                 <div class="lien_menu"> <a href="histoire.html">histoire - l'origine du tatouages</a></div>
-                <div class="lien_menu">compte</div>
+                <!-- <div class="lien_menu">compte</div> -->
                 <div class="lien_menu"><span>Nous contacter &nbsp; </span><a href=""> inkstory@gmail.com</a></div>
 
             </nav>
+            <nav id="menuClient">
+                <div class="lien_menu">Bonjour Monsieur Wyon</div>
+                <div class="lien_menu"> <a href="mon_compte.html">Mes informations</a></div>
+               
+                <div class="lien_menu"> <a href="listing_cde.html">Mes commandes</a></div>
+               
+              </nav>
         </div>
     </header>
     <main class="hm-gradient">
@@ -157,7 +167,6 @@
         </div>
         <div class="modal-body">
             <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div>
-
             <div class="px-4 py-5">
 
                 <h5 class="text-uppercase">Mary Kate</h5>
@@ -170,30 +179,24 @@
                 <div class="mb-3">
                     <hr class="new1">
                 </div>
-
                 <div class="d-flex justify-content-between">
                     <span class="font-weight-bold">Détails de la commande: </span>
                 
                 </div>
-
                 <div class="d-flex justify-content-between">
                     <small>Livraison</small>
                     <small>7.99€</small>
                 </div>
-
-
                 <div class="d-flex justify-content-between">
                     <small>Produit</small>
                     <small>20.00€</small>
                 </div>
-
                 <div class="d-flex justify-content-between mt-3">
                     <span class="font-weight-bold">Total</span>
                     <span class="font-weight-bold theme-color">27.99€</span>
                 </div>
 
                 </div>
-
             </div>
         </div>
       </div>
@@ -224,11 +227,8 @@
 
     <script src="/JS/listing_cde.js"></script>
     <script src="/JS/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
