@@ -101,21 +101,21 @@
              <main class="container">
         <td><h3>Cliquez sur une étoile pour donner une note</h3></td>
         <td><div class="stars">
-            <i class="star stargrey fas fa-star" data-index="0"></i>
-            <i class="star stargrey fas fa-star" data-index="1"></i>
-            <i class="star stargrey fas fa-star" data-index="2"></i>
-            <i class="star stargrey fas fa-star" data-index="3"></i>
-            <i class="star stargrey fas fa-star" data-index="4"></i>
+            <i  id='star1' class="star stargrey fas fa-star" data-index="0"></i>
+            <i  id='star2' class="star stargrey fas fa-star" data-index="1"></i>
+            <i  id='star3' class="star stargrey fas fa-star" data-index="2"></i>
+            <i  id='star4' class="star stargrey fas fa-star" data-index="3"></i>
+            <i  id='star5' class="star stargrey fas fa-star" data-index="4"></i>
         </div></td>
             </tr>
             </table>
-
+              <input type="hidden" id="nbreStar">
              <textarea   class="mt-5" id="user-text" rows="10" cols="50" maxlength="100"></textarea>
 
               <div id="char-length">/200</div>
 
-              <!-- <button  id="btn_comment" >Enregistrer</button>
-  -->
+             <button  id="btn_comment" >Enregistrer</button>
+
 
                     
 
@@ -138,6 +138,6 @@
     <script src="/JS/header.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/JS/detail_produit.js"></script>
-
+<script src="/JS/commentsRandom.js"></script>
 </body>
 </html>
