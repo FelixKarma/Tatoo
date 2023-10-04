@@ -102,3 +102,12 @@ textarea{
    float:right;
    margin:25px;
  }
+
+ #price{
+   font-size: 30px;
+   color: red ;
+ }
+ #note{
+   position:relative;
+   right:20px;
+ }
