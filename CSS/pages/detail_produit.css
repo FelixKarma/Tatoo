@@ -108,6 +108,8 @@ textarea{
    color: red ;
  }
  #note{
-   position:relative;
-   right:20px;
+   position:absolute;
+   right: 0px;
+   top:280px;
+   font-size: 30px;
  }
