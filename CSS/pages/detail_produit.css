@@ -97,3 +97,8 @@ textarea{
    border:1px solid black ;
    display:block;
  }
+
+ #btn_comment{
+   float:right;
+   margin:25px;
+ }
