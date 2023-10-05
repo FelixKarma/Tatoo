@@ -45,16 +45,10 @@ function showCommentRandom() {
   })
   }
   function addElement() {
-    // crée un nouvel élément div
-    var newDiv = document.createElement("div");
+   var newDiv = document.createElement("div");
     newDiv.className = "alert alert-success";
-    
-    // et lui donne un peu de contenu
-    newDiv.innerText = "Commentaire envoyer!";
-    // ajoute le nœud texte au nouveau div créé
-    // newDiv.appendChild(newContent);
-    // ajoute le nouvel élément créé et son contenu dans le DOM
-    var currentDiv = document.getElementById("Comment");
+  newDiv.innerText = "Commentaire envoyer!";
+  var currentDiv = document.getElementById("Comment");
     currentDiv.appendChild(newDiv);
      setTimeout(() => {
        newDiv.classList.add("d-none");
