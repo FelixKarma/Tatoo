@@ -110,6 +110,12 @@ textarea{
  #note{
    position:absolute;
    right: 0px;
-   top:280px;
+   top:290px;
+   font-size: 30px;
+ }
+
+ #average{
+   float:right ;
+   top:10px;
    font-size: 30px;
  }
