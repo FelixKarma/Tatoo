@@ -36,6 +36,7 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
+    z-index:150;
 }
 #logo{
     display:flex;

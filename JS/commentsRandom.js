@@ -9,6 +9,7 @@ function showCommentRandom() {
     let commenttabs=tabs[rand].slice(2,tabs[rand].length);
     comment.innerText = commenttabs;
     note.innerText = notetabs+'/5';
+    avertageComments();
 }
 avertageComments()
 function avertageComments(){
@@ -24,6 +25,7 @@ function avertageComments(){
     d = i ;
   } 
   let q ;
+ 
   nbre = d;
 
   q = notes /nbre ;
