@@ -9,7 +9,6 @@ function showCommentRandom() {
     let commenttabs=tabs[rand].slice(2,tabs[rand].length);
     comment.innerText = commenttabs;
     note.innerText = notetabs+'/5';
-    avertageComments()
 }
 avertageComments()
 function avertageComments(){
@@ -56,7 +55,8 @@ function avertageComments(){
       localStorage.setItem("comment"+i,array);
       tabs.push(array);
       text.value = '' ;
-      addElement()
+      addElement();
+      avertageComments();
       
      
     }
