@@ -25,9 +25,7 @@ function avertageComments(){
     d = i ;
   } 
   let q ;
- 
   nbre = d;
-
   q = notes /nbre ;
   q = q.toFixed(2);
   let show = document.getElementById("average");
@@ -59,8 +57,6 @@ function avertageComments(){
       text.value = '' ;
       addElement();
       avertageComments();
-      
-     
     }
   })
   }
@@ -89,15 +85,12 @@ function avertageComments(){
     star5.addEventListener("click",function(){
       addCo(5);
     })
-    
     let tabs = [];
     for(let i =0;i<localStorage.length;i++){
       if (localStorage.getItem('comment'+i)!=null) {
           tabs.push(localStorage.getItem('comment'+i));
       }
     }
- 
-
   showCommentRandom();
   setInterval(function(){
     showCommentRandom();
