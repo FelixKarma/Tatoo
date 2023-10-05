@@ -37,8 +37,28 @@ function showCommentRandom() {
       localStorage.setItem("comment"+i,array);
       tabs.push(array);
       text.value = '' ;
+      //ajouter une div pour signaler que le commentaire a ete envoyer
+       addElement()
+      
+     
     }
   })
+  }
+  function addElement() {
+    // crée un nouvel élément div
+    var newDiv = document.createElement("div");
+    newDiv.className = "alert alert-success";
+    
+    // et lui donne un peu de contenu
+    newDiv.innerText = "Commentaire envoyer!";
+    // ajoute le nœud texte au nouveau div créé
+    // newDiv.appendChild(newContent);
+    // ajoute le nouvel élément créé et son contenu dans le DOM
+    var currentDiv = document.getElementById("Comment");
+    currentDiv.appendChild(newDiv);
+     setTimeout(() => {
+       newDiv.classList.add("d-none");
+     }, "3000");
   }
     star1.addEventListener("click",function(){
      addCo(1);
