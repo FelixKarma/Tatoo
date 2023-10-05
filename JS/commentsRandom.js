@@ -2,6 +2,7 @@ function getRandomArbitrary(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
 function showCommentRandom() {  
+
     let rand       = getRandomArbitrary(0, tabs.length-1);
     let comment    = document.getElementById('comment');
     let note       = document.getElementById('note');
@@ -57,6 +58,7 @@ function avertageComments(){
       text.value = '' ;
       addElement();
       avertageComments();
+      location.reload();
     }
   })
   }
